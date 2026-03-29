@@ -1,5 +1,5 @@
 vpn-configs/
-wgsocks
+/wgsocks
 *.exe
 .idea/
 .vscode/
