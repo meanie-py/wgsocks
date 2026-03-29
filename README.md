@@ -1,5 +1,7 @@
 # wgsocks
 
+> Fully vibecoded with [Claude Code](https://claude.ai/claude-code)
+
 A SOCKS5 proxy that routes traffic through WireGuard VPN tunnels. Uses [wireguard-go](https://github.com/WireGuard/wireguard-go) with gVisor netstack for pure userspace tunnels — no kernel modules, no root required.
 
 Manages a pool of tunnels with LRU eviction and round-robin load balancing with automatic failover.
