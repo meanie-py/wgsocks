@@ -1,0 +1,7 @@
+vpn-configs/
+wgsocks
+*.exe
+.idea/
+.vscode/
+.DS_Store
+CLAUDE.md

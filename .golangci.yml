@@ -1,0 +1,28 @@
+linters:
+  enable:
+    - errcheck
+    - govet
+    - staticcheck
+    - unused
+    - ineffassign
+    - gosimple
+    - gocritic
+    - misspell
+    - revive
+
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - (net.Conn).Write
+      - (net.Conn).Close
+  revive:
+    rules:
+      - name: exported
+        disabled: true
+
+issues:
+  exclude-use-default: false
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - errcheck
